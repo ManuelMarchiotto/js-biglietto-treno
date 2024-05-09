@@ -39,4 +39,4 @@ const euroDiscount = ((kilomiter * priceKm)*discount)/100;
 const euro = (kilomiter * priceKm);
 
 document.getElementById("euro").innerHTML = euro;
-console.log(euro);
+console.log(euro.toFixed(2));
