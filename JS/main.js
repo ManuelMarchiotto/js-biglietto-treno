@@ -34,9 +34,7 @@ if(isNaN(kilomiter) || isNaN(age)){
 }
 
 //Calcolo di soldi da spendere per il viaggio
-
-const euroDiscount = ((kilomiter * priceKm)*discount)/100;
-const euro = (kilomiter * priceKm)-euroDiscount;
+const euro = (((kilomiter * priceKm)*discount)/100)-euroDiscount;
 
 document.getElementById("euro").innerHTML = euro;
 console.log(euro);
