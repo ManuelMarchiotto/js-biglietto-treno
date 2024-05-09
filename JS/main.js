@@ -38,7 +38,6 @@ if(isNaN(kilomiter) || isNaN(age)){
 const euroDiscount = ((kilomiter * priceKm)*discount)/100;
 const euro = (kilomiter * priceKm);
 
-euro = euro.toFixed(2);
 
-document.getElementById("euro").innerHTML = euro;
+document.getElementById("euro").innerHTML = `il biglietto costa ${euro.toFixed(2)}€`;
 console.log(euro.toFixed(2));
